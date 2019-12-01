@@ -1,3 +1,3 @@
 # Encryptor_
 Simple encryptor with GUI 
-![](support/capture.png)
+![](support/Capture.PNG)
