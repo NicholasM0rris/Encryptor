@@ -185,7 +185,7 @@ class menu_class:
             text[i] = ord(text[i])
             if checker[i].isalpha():
                 if i % 11 == 0 and i != 0:
-                    text[i] = (text[i] + self.key_shift_value + ord(self.key[int(len(self.key) / 3)]) - (
+                    text[i] = (text[i] + self.key_shift_value + ord(self.key[int(len(self.key) / 2)]) - (
                             (i * 2) % 14)) % 26
                 elif i % 5 == 0 and i != 0:
                     text[i] = (text[i] + self.key_shift_value + ord(self.key[int(len(self.key) / 4)]) - (
@@ -237,7 +237,7 @@ class menu_class:
             try:
                 if 0 <= text[i] <= 25:
                     if i % 11 == 0 and i != 0:
-                        c = -self.key_shift_value - ord(self.key[int(len(self.key) / 3)]) + ((i * 2) % 14)
+                        c = -self.key_shift_value - ord(self.key[int(len(self.key) / 2)]) + ((i * 2) % 14)
                         for count in range(97, 123):
                             if text[i] == (count - c) % 26:
                                 text[i] = count + ord('a')
